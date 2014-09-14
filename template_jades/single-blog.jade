@@ -1,0 +1,304 @@
+doctype html
+//if lt IE 7
+  html.lt-ie9.lt-ie8.lt-ie7(lang='en-US')  
+//if IE 7
+  html.lt-ie9.lt-ie8(lang='en-US')  
+//if IE 8
+  html.lt-ie9(lang='en-US')  
+// [if gt IE 8] <!
+html(lang='en-US')
+  // <![endif]
+  head
+    // META TAGS
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title Elegantia Restaurant and Cafe Theme
+    // FAVICON
+    link(rel='shortcut icon', href='images/favicon.png')
+    // Google Web Fonts
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet', type='text/css')
+    // Style Sheet
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='css/main.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/media-queries.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/flexslider/flexslider.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/prettyphoto/prettyPhoto.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/the-tooltip/the-tooltip.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/custom.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/jquery-ui-1.9.0.custom/css/trontastic/jquery-ui-1.9.0.custom.css', type='text/css', media='all')
+    // Script
+    script(type='text/javascript', src='js/jquery-1.8.3.min.js')
+    script(type='text/javascript', src='js/elastislide/jquery.easing.1.3.js')
+    script(type='text/javascript', src='js/elastislide/jquery.elastislide.js')
+    script(type='text/javascript', src='js/prettyphoto/jquery.prettyPhoto.js')
+    script(type='text/javascript', src='js/jquery.validate.min.js')
+    script(type='text/javascript', src='js/jquery.form.js')
+    script(type='text/javascript', src='js/flexslider/jquery.flexslider-min.js')
+    script(type='text/javascript', src='js/jquery.isotope.min.js')
+    script(type='text/javascript', src='js/the-tooltip/the-tooltip.min.js')
+    //if lt IE 9
+      script(src='js/html5.js')
+    //if (gte IE 6)&(lte IE 8)
+      script(defer='', src='s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js')
+      script(defer='', src='js/the-tooltip/selectivizr-min.js')
+  body
+    // Start wrap
+    #page-content-wrap
+      // Start Header
+      #header-wrapper
+        header#header
+          h6 Las Angeles, AV 123456 - 123.456.7800
+          // Left Menu
+          nav.main-menu.left.clearfix
+            .menu-left-main-menu-container
+              ul#menu-left-main-menu.clearfix
+                li.menu-item
+                  a(href='index.html') Home
+                li.menu-item
+                  a(href='our-menu.html') Menu
+                li.menu-item
+                  a(href='#') Gallery
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='gallery-2-columns.html') 2 Columns Gallery
+                    li.menu-item
+                      a(href='gallery-3-columns.html') 3 Columns Gallery
+                    li.menu-item
+                      a(href='gallery-4-columns.html') 4 Columns Gallery
+                    li.menu-item
+                      a(href='candel-light-dinner.html') Gallery Item Detail
+                li.menu-item
+                  a(href='faq.html') FAQs
+                li.menu-item
+                  a(href='about.html') About
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='about.html') About
+                    li.menu-item
+                      a(href='about-left-sidebar.html') About &ndash; Left Sidebar
+          // Header Logo
+          #logo
+            // Website Logo
+            a(href='index.html', title='Elegantia Restaurant and Cafe Theme')
+              img(src='images/elegantia-logo.png', alt='Elegantia Restaurant and Cafe Theme')
+          // Right Menu
+          nav.main-menu.right.clearfix
+            .menu-right-main-menu-container
+              ul#menu-right-main-menu.clearfix
+                li.menu-item
+                  a(href='contact.html') Contact
+                li.menu-item
+                  a(href='#') Others
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='reservation.html') Reservation
+                    li.menu-item
+                      a(href='elements.html') Elements
+                    li.menu-item
+                      a(href='fullwidth.html') Full Width
+                    li.menu-item
+                      a(href='candel-light-dinner.html') Gallery Item Single
+                    li.menu-item
+                      a(href='single-team.html') Team Member Single
+                    li.menu-item
+                      a(href='cream-cakes.html') Menu Item Single
+                li.menu-item
+                  a(href='blog.html') Blog
+                li.menu-item
+                  a(href='our-team.html') Team
+                li.menu-item
+                  a(href='events.html') Events
+      // End Header
+      // Bottom Strip
+      .bottom-strip-wrapper
+        .bottom-strip
+          p
+            span Call 023 7526 8539  or Make Online Reservation
+            a(href='reservation.html') MAKE  RESERVATION NOW
+      // Start Container
+      #container
+        // Content
+        .content.right.news.clearfix
+          .container-top
+          section.page-head
+            h1
+              span Our News
+          // Main
+          #main-content
+            article.post.type-post.clearfix
+              header.clearfix
+                .article-date
+                  | Dec&#x9;
+                  span 19
+                .post-head
+                  h2.post-title  Elegantia Restaurant Chef at Work 
+                  small
+                    span Posted in: 
+                    a(href='', title='View all posts in Activities') Activities
+                .comment-count
+                  span
+                    a(href='', title='Comment on Elegantia Restaurant Chef at Work') 0 Comments
+              .post-thumb.clearfix
+                a.pretty-photo(href='images/chef-at-work.jpg', title='Elegantia Restaurant Chef at Work')
+                  img(src='images/chef-at-work.jpg', alt='Elegantia Restaurant Chef at Work')
+              // end of post thumb
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              p
+                img.aligncenter.size-full.wp-image-16(alt='three', src='images/three.jpg')
+              p
+                | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+              p
+                img.alignleft.size-full.wp-image-14(alt='two', src='images/two.jpg')
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+              p
+                | Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+              p
+                img.alignright.size-full.wp-image-15(alt='one', src='images/one.jpg')
+              p
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+              p
+                | Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+            section#comments
+              #respond
+                h3#reply-title
+                  | Leave a Reply 
+                  small
+                    a#cancel-comment-reply-link(rel='nofollow', href='') Cancel reply
+                form#commentform(action='#', method='post')
+                  p.comment-notes
+                    | Your email address will not be published. Required fields are marked 
+                    span.required *
+                  p.comment-form-author
+                    label(for='author')
+                      | Name 
+                      span.required *
+                    input#author(name='author', type='text', value='', size='30', aria-required='true')
+                  p.comment-form-email
+                    label(for='email')
+                      | Email 
+                      span.required *
+                    input#email(name='email', type='text', value='', size='30', aria-required='true')
+                  p.comment-form-url
+                    label(for='url') Website
+                    input#url(name='url', type='text', value='', size='30')
+                  p.comment-form-comment
+                    label(for='comment') Comment
+                    textarea#comment(name='comment', cols='45', rows='8', aria-required='true')
+                  p.form-allowed-tags
+                    | You may use these 
+                    abbr(title='HyperText Markup Language') HTML
+                    |  tags and attributes:  
+                    code
+                      | &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
+                  p.form-submit
+                    input#submit(name='submit', type='submit', value='Post Comment')
+              // #respond
+            // end of comments
+          // End Main
+          // Start of Sidebar
+          aside#sidebar
+            section.widget
+              form#searchform(method='get')
+                div
+                  label.screen-reader-text(for='s') Search for:
+                  input#s(type='text', value='', name='s')
+                  input#searchsubmit(type='submit', value='Search')
+            section.widget
+              h3.title Menu Types
+              ul
+                li
+                  a(href='', title='View all posts filed under Appetizers') Appetizers
+                li
+                  a(href='', title='View all posts filed under Desserts') Desserts
+                li
+                  a(href='', title='View all posts filed under Main Dishes') Main Dishes
+                li
+                  a(href='', title='View all posts filed under Salads') Salads
+            section.widget
+              h3.title Featured Menu Items
+              .sidebar-menu-item.clearfix
+                h4
+                  a(href='#') Sandwich Spiral Roll
+                figure
+                  a(href='#')
+                    img.sidebar-menu-thumb.wp-post-image(src='images/mini-sandwich-spiral-roll-appetizers-50x50.jpg', alt='Mini sandwich spiral roll appetizers')
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam&mldr;
+                a.read-more(href='') Read More
+              .sidebar-menu-item.clearfix
+                h4
+                  a(href='#') Vegetable Soup
+                figure
+                  a(href='#')
+                    img.sidebar-menu-thumb.wp-post-image(src='images/vegetable-soup-50x50.jpg', alt='vegetable soup')
+                p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam&mldr;
+                a.read-more(href='') Read More
+              .sidebar-menu-item.clearfix
+                h4
+                  a(href='#') Fruits Salad
+                figure
+                  a(href='#')
+                    img.sidebar-menu-thumb.wp-post-image(src='images/fruits-salad-50x50.jpg', alt='fruits salad')
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam&mldr;
+                a.read-more(href='') Read More
+            section.widget
+              h3.title Upcoming Events
+              .sidebar-menu-item.clearfix
+                h4
+                  a(href='#') Event Duis autem vel eum iriure dolor in hendrerit
+                figure
+                  a(href='#')
+                    img.sidebar-menu-thumb.wp-post-image(src='images/photodune-3228122-sweet-toast-and-ice-cream-xs-89x89.jpg', alt='sweet toast and ice cream')
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam&mldr;
+                a.read-more(href='') Read More
+              .sidebar-menu-item.clearfix
+                h4
+                  a(href='#') Event Ut wisi enim ad minim veniam
+                figure
+                  a(href='#')
+                    img.sidebar-menu-thumb.wp-post-image(src='images/mini-sandwich-spiral-roll-appetizers1-89x89.jpg', alt='Mini sandwich spiral roll appetizers')
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam&mldr;
+                a.read-more(href='') Read More
+          // End of Sidebar
+          .container-bottom
+        // End Content
+      // End Container
+      // Start Footer
+      #footer-wrapper
+        footer#footer
+          // Footer Menu
+          nav#footer-menu
+            ul#menu-footer-menu.clearfix
+              li
+                a(href='index.html') Home
+              li
+                a(href='blog.html') Blog
+              li
+                a(href='our-team.html') Our Team
+              li
+                a(href='events.html') All Events
+              li
+                a(href='gallery-2-columns.html') Gallery
+              li
+                a(href='our-menu.html') Our Menu
+              li
+                a(href='contact.html') Contact
+          // Social Icons
+          ul.social-nav
+            li.twitter
+              a(target='_blank', href='https://twitter.com/960Development')
+            li.facebook
+              a(target='_blank', href='http://www.facebook.com/pages/960Development/128383130562816')
+            li.mail
+              a(target='_blank', href='mailto:robot@psdtohtmlwp.com')
+            li.rss
+              a(target='_blank', href='#rss-link')
+          address 12300 Las Angeles Main Blvd, Las Angeles, AV 123456 - 123.456.7890
+          p.copyright Copyright &copy; 2012 Elegantia Restaurant &amp; Bar. All rights reserved.
+      // End Footer
+    // End Page wrap
+    a#scroll-top(href='#top')
+    script(type='text/javascript', src='js/jquery-ui-1.9.0.custom/js/jquery-ui-1.9.0.custom.min.js')
+    script(type='text/javascript', src='js/custom.js')

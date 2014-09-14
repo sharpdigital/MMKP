@@ -1,0 +1,232 @@
+doctype html
+//if lt IE 7
+  html.lt-ie9.lt-ie8.lt-ie7(lang='en-US')  
+//if IE 7
+  html.lt-ie9.lt-ie8(lang='en-US')  
+//if IE 8
+  html.lt-ie9(lang='en-US')  
+// [if gt IE 8] <!
+html(lang='en-US')
+  // <![endif]
+  head
+    // META TAGS
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title Elegantia Restaurant and Cafe Theme
+    // FAVICON
+    link(rel='shortcut icon', href='images/favicon.png')
+    // Google Web Fonts
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700', rel='stylesheet', type='text/css')
+    // Style Sheet
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='css/main.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/media-queries.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/flexslider/flexslider.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/prettyphoto/prettyPhoto.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/the-tooltip/the-tooltip.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/custom.css', type='text/css', media='all')
+    link(rel='stylesheet', href='js/jquery-ui-1.9.0.custom/css/trontastic/jquery-ui-1.9.0.custom.css', type='text/css', media='all')
+    // Script
+    script(type='text/javascript', src='js/jquery-1.8.3.min.js')
+    script(type='text/javascript', src='js/elastislide/jquery.easing.1.3.js')
+    script(type='text/javascript', src='js/elastislide/jquery.elastislide.js')
+    script(type='text/javascript', src='js/prettyphoto/jquery.prettyPhoto.js')
+    script(type='text/javascript', src='js/jquery.validate.min.js')
+    script(type='text/javascript', src='js/jquery.form.js')
+    script(type='text/javascript', src='js/flexslider/jquery.flexslider-min.js')
+    script(type='text/javascript', src='js/jquery.isotope.min.js')
+    script(type='text/javascript', src='js/the-tooltip/the-tooltip.min.js')
+    //if lt IE 9
+      script(src='js/html5.js')
+    //if (gte IE 6)&(lte IE 8)
+      script(defer='', src='s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js')
+      script(defer='', src='js/the-tooltip/selectivizr-min.js')
+  body
+    // Start wrap
+    #page-content-wrap
+      // Start Header
+      #header-wrapper
+        header#header
+          h6 Las Angeles, AV 123456 - 123.456.7800
+          // Left Menu
+          nav.main-menu.left.clearfix
+            .menu-left-main-menu-container
+              ul#menu-left-main-menu.clearfix
+                li.menu-item
+                  a(href='index.html') Home
+                li.menu-item
+                  a(href='our-menu.html') Menu
+                li.menu-item
+                  a(href='#') Gallery
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='gallery-2-columns.html') 2 Columns Gallery
+                    li.menu-item
+                      a(href='gallery-3-columns.html') 3 Columns Gallery
+                    li.menu-item
+                      a(href='gallery-4-columns.html') 4 Columns Gallery
+                    li.menu-item
+                      a(href='candel-light-dinner.html') Gallery Item Detail
+                li.menu-item
+                  a(href='faq.html') FAQs
+                li.menu-item
+                  a(href='about.html') About
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='about.html') About
+                    li.menu-item
+                      a(href='about-left-sidebar.html') About &ndash; Left Sidebar
+          // Header Logo
+          #logo
+            // Website Logo
+            a(href='index.html', title='Elegantia Restaurant and Cafe Theme')
+              img(src='images/elegantia-logo.png', alt='Elegantia Restaurant and Cafe Theme')
+          // Right Menu
+          nav.main-menu.right.clearfix
+            .menu-right-main-menu-container
+              ul#menu-right-main-menu.clearfix
+                li.menu-item
+                  a(href='contact.html') Contact
+                li.menu-item
+                  a(href='#') Others
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='reservation.html') Reservation
+                    li.menu-item
+                      a(href='elements.html') Elements
+                    li.menu-item
+                      a(href='fullwidth.html') Full Width
+                    li.menu-item
+                      a(href='candel-light-dinner.html') Gallery Item Single
+                    li.menu-item
+                      a(href='single-team.html') Team Member Single
+                    li.menu-item
+                      a(href='cream-cakes.html') Menu Item Single
+                li.menu-item
+                  a(href='blog.html') Blog
+                li.menu-item
+                  a(href='our-team.html') Team
+                li.menu-item
+                  a(href='events.html') Events
+      // End Header
+      // Bottom Strip
+      .bottom-strip-wrapper
+        .bottom-strip
+          p
+            span Call 023 7526 8539  or Make Online Reservation
+            a(href='reservation.html') MAKE  RESERVATION NOW
+      // Start Container
+      #container
+        // Content
+        .content.full-width.clearfix
+          .container-top
+          section.page-head
+            h1
+              span Elements
+          // Main
+          #main-content
+            article.clearfix
+              h2 Tabs
+              ul.tabs-nav
+                li.active
+                  a(href='#') First Tab
+                li
+                  a(href='#') Second Tab
+                li
+                  a(href='#') Third Tab
+              .tabs-container
+                .tab-content
+                  | 1Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                .tab-content
+                  | 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                .tab-content
+                  | 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              h2 Accordion
+              dl.accordion.clearfix
+                dt
+                  span
+                  | First Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+                dt
+                  span
+                  | Second Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+                dt
+                  span
+                  | Third Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+              h2 Toggles
+              dl.toggle.clearfix
+                dt
+                  span
+                  | First Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+                dt
+                  span
+                  | Second Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+                dt
+                  span
+                  | Third Accordion Item
+                dd
+                  | Although starting a prototype on a is sometimes easi problem-solve. When you need to ideate website prototype on a is sometimes easier, it&rsquo;s not the best When you or to storyboard context Although starting a prototype on a is sometimes easi problem- solve. When you need to ideate website &mldr;
+              h2 Blockquote
+              blockquote
+                p
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              h3 Messages
+              p.error
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+              p.success
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+              p.info
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+              p.notice
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+          // End Main
+          .container-bottom
+        // End Content
+      // End Container
+      // Start Footer
+      #footer-wrapper
+        footer#footer
+          // Footer Menu
+          nav#footer-menu
+            ul#menu-footer-menu.clearfix
+              li
+                a(href='index.html') Home
+              li
+                a(href='blog.html') Blog
+              li
+                a(href='our-team.html') Our Team
+              li
+                a(href='events.html') All Events
+              li
+                a(href='gallery-2-columns.html') Gallery
+              li
+                a(href='our-menu.html') Our Menu
+              li
+                a(href='contact.html') Contact
+          // Social Icons
+          ul.social-nav
+            li.twitter
+              a(target='_blank', href='https://twitter.com/960Development')
+            li.facebook
+              a(target='_blank', href='http://www.facebook.com/pages/960Development/128383130562816')
+            li.mail
+              a(target='_blank', href='mailto:robot@psdtohtmlwp.com')
+            li.rss
+              a(target='_blank', href='#rss-link')
+          address 12300 Las Angeles Main Blvd, Las Angeles, AV 123456 - 123.456.7890
+          p.copyright Copyright &copy; 2012 Elegantia Restaurant &amp; Bar. All rights reserved.
+      // End Footer
+    // End Page wrap
+    a#scroll-top(href='#top')
+    script(type='text/javascript', src='js/jquery-ui-1.9.0.custom/js/jquery-ui-1.9.0.custom.min.js')
+    script(type='text/javascript', src='js/custom.js')

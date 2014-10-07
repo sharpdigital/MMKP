@@ -1,74 +1,10 @@
 // Content
 .content.right.clearfix
   .container-top
-  section.page-head
-    h1
-      span About
-  // Main
-  #main-content
-    article.clearfix
-      h2.title-heading Our Philosophy
-      p
-        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-      p
-        img.aligncenter.size-full.wp-image-61(alt='about us page image', src='images/about-us-page-image.jpg')
-      p
-        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-      h1 This is 1st level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-      h2 This is 2nd level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-      h3 This is 3rd level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-      h4 This is 4th level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-      h5 This is 5th level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-      h6 This is 6th level heading
-      p
-        | Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.
-    section#comments
-      #respond
-        h3#reply-title
-          | Leave a Reply 
-          small
-            a#cancel-comment-reply-link(rel='nofollow', href='') Cancel reply
-        form#commentform(action='#', method='post')
-          p.comment-notes
-            | Your email address will not be published. Required fields are marked 
-            span.required *
-          p.comment-form-author
-            label(for='author')
-              | Name 
-              span.required *
-            input#author(name='author', type='text', value='', size='30', aria-required='true')
-          p.comment-form-email
-            label(for='email')
-              | Email 
-              span.required *
-            input#email(name='email', type='text', value='', size='30', aria-required='true')
-          p.comment-form-url
-            label(for='url') Website
-            input#url(name='url', type='text', value='', size='30')
-          p.comment-form-comment
-            label(for='comment') Comment
-            textarea#comment(name='comment', cols='45', rows='8', aria-required='true')
-          p.form-allowed-tags
-            | You may use these 
-            abbr(title='HyperText Markup Language') HTML
-            |  tags and attributes:  
-            code
-              | &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt;
-          p.form-submit
-            input#submit(name='submit', type='submit', value='Post Comment')
-      // #respond
-    // end of comments
-  // End Main
-  include ../includes/sidebar.jade
+  include ./page-head.jade
+
+  include ./main-content.jade
+
+  include ./sidebar.jade
   .container-bottom
-  // End Content
+// End Content

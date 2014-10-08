@@ -1,0 +1,29 @@
+doctype html
+//if lt IE 7
+  html.lt-ie9.lt-ie8.lt-ie7(lang='en-US')  
+//if IE 7
+  html.lt-ie9.lt-ie8(lang='en-US')  
+//if IE 8
+  html.lt-ie9(lang='en-US')  
+// [if gt IE 8] <!
+html(lang='en-US')
+  // <![endif]
+  include ../includes/head.jade
+  body
+    #page-content-wrap     
+      include ../includes/header.jade
+      
+      include ../includes/bottom-strip-wrapper.jade
+      // Start Container
+      #container
+        
+        include ../includes/content.jade
+
+      // End Container
+      
+      include ../includes/footer.jade
+      
+    // End Page wrap
+    a#scroll-top(href='#top')
+    script(type='text/javascript', src='js/jquery-ui-1.9.0.custom/js/jquery-ui-1.9.0.custom.min.js')
+    script(type='text/javascript', src='js/custom.js')

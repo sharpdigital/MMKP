@@ -1,0 +1,25 @@
+extend ./extends/artist.jade
+
+block name
+  | Orbán Ferenc
+
+block portre
+  img.alignleft.wp-post-image(src='images/orbanferenc2.jpg', alt='Orbán Ferenc')
+
+block bio
+  p Orbán Ferenc erdélyi zenész, zenetanár, immár tíz éve készít lemezeket (Gyermekvilág, Pilinszky-dalok, Örökség, Mozsikácska, Egyedül, Szívhangok, MeseMorzsák, Kerekecske esztendőcske, Evilági, Dalóka), animáció-aláfestő- és színpadi muzsikát.
+
+  p Ferenc székelykeresztúri származású, de mára sepsiszentgyörgyivé vált zenész, aki számos zenekarban játszik, színházi zenét szerez, rajzfilmek zenei aláfestését készíti el, valamint cover'n'cover koncerteket tart Kátai Judittal, amikor közismert dalokat adnak elő.
+
+  p Szobája megannyi hangszer otthona, leggyakoribb hangadói: hegedű, gitár, cimbalom és mandolin.
+
+  p Egyedül vagy együttesen dalolgat kicsiknek és nagyoknak egyaránt.
+
+block gallery
+  .gallery-item.type-gallery-item.gallery-item.isotope-item
+    a.pretty-photo.zoom(href='images/orbanferenc1.jpg', title='Orbán Ferenc')
+      img.img-border(src='images/orbanferenc1.jpg', alt='Orbán Ferenc', style='width:383px;height:233px')
+  .gallery-item.type-gallery-item.gallery-item.isotope-item
+    iframe.img-border(style='width:383px;height:233px', src='http://www.youtube.com/embed/P_4XYO3tjEo', frameborder='0', allowfullscreen)
+  .gallery-item.type-gallery-item.gallery-item.isotope-item
+    iframe.img-border(style='width:383px;height:233px', src='http://www.youtube.com/embed/jD5yIkClk2w', frameborder='0', allowfullscreen)

@@ -25,10 +25,6 @@ block maincontent
         | Üzenet
         span *
       textarea#message.required(name='message', title='* Please enter your message')
-      .captcha-container
-        label Are you human?
-        img.captcha-img(src='captcha/captcha.php', alt='')
-        input.captcha.required(type='text', name='captcha', maxlength='5', title='* Please enter the code characters displayed in image!')
       input.submit(type='submit', name='submit', value='Send Message')
       img#contact-loader(src='images/ajax-loader.gif', alt='Loading...')
       input(type='hidden', name='action', value='send_message')

@@ -1,10 +1,10 @@
 doctype html
 //if lt IE 7
-  html.lt-ie9.lt-ie8.lt-ie7(lang='en-US')  
+  html.lt-ie9.lt-ie8.lt-ie7(lang='en-US')
 //if IE 7
-  html.lt-ie9.lt-ie8(lang='en-US')  
+  html.lt-ie9.lt-ie8(lang='en-US')
 //if IE 8
-  html.lt-ie9(lang='en-US')  
+  html.lt-ie9(lang='en-US')
 // [if gt IE 8] <!
 html(lang='en-US')
   // <![endif]
@@ -130,7 +130,7 @@ html(lang='en-US')
               p
                 | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
               address
-                | Address details will appear here 
+                | Address details will appear here
                 br
                 | 2nd line of address will appear here,
                 br
@@ -179,22 +179,22 @@ html(lang='en-US')
               form.contact-form.clearfix(action='contact.php', method='post', novalidate='')
                 p.adjust
                   label(for='name')
-                    | Your Name 
+                    | Your Name
                     span *
                   input#name.required(type='text', name='name', value='', title='* Please enter your name')
                 p
-                  label(for='pn') Phone Number 
+                  label(for='pn') Phone Number
                   input#pn(type='text', name='pn', value='')
                 p.adjust
                   label(for='email')
-                    | Email 
+                    | Email
                     span *
                   input#email.email.required(type='text', name='email', value='', title='* Please enter your email address')
                 p
-                  label(for='reason') Subject 
+                  label(for='reason') Subject
                   input#reason(type='text', name='reason', value='')
                 label(for='message')
-                  | Message 
+                  | Message
                   span *
                 textarea#message.required(name='message', title='* Please enter your message')
                 .captcha-container

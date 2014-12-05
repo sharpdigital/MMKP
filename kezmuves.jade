@@ -1,4 +1,12 @@
-extend extends/nosidebar.jade
+extend extends/genre.jade
 
-block maintitle
+block genre
   | Kézműves
+
+block artistlist
+  .gallery-item.type-gallery-item.status-publish.hentry.gallery-item.isotope-item
+    figure
+      a(href='egyed-janosne.html', title='Egyed Jánosné')
+        img.img-border(src='images/muveszeink/egyed-janosne/dana-ekszer-383x233.jpg', alt='Egyed Jánosné' style='width:178px;height:267px')
+    h5.item-title
+      a(href='egyed-janosne.html', title='Egyed Jánosné') Egyed Jánosné

@@ -107,22 +107,31 @@
           <!-- Main-->
           <div id="main-content">
             <article class="clearfix">
-              <h2 class="title-heading">Our Philosophy</h2>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
-              <p><img alt="about us page image" src="images/about-us-page-image.jpg" class="aligncenter size-full wp-image-61"></p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
-              <h1>This is 1st level heading</h1>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
-              <h2>This is 2nd level heading</h2>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
-              <h3>This is 3rd level heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
-              <h4>This is 4th level heading</h4>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
-              <h5>This is 5th level heading</h5>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
-              <h6>This is 6th level heading</h6>
-              <p>Lorem ipsum dolor sit amet consectetuer eleifend elit vel tellus laoreet. At ut pellentesque risus quis sem eros et consequat enim lorem. Aenean lorem consequat consequat eu.</p>
+              <p>Tisztelt leendő Partnerünk!</p>
+              <p>Kérném, hogy engedje meg hogy egy esetleges jövőbeni együttműködés reményében figyelembe ajánljunk szervezetünket és honlapunkat.</p>
+              <p>A Magyar Művészeti és Kulturális Portál egy olyan speciális kezdeményezés, ahol a vállalatok, azok ügyfelei, az állam és a társadalom egyre fokozódó szociális és kulturális felelősségvállalás keretében a helyi közösségekkel együtt dolgozhatnak és alkothatnak maradandó értéket.</p>
+              <P>Számunkra a legfontosabb a magyar művészet, kultúra magas színvonalon való továbbadása, a kihalófélben  lévő magyar mesterségek és azok mestereinek felkutatása és bemutatása. Mindezt olyan programokon keresztül tesszük, amelyek elsősorban egy a “Kultúra kiemelt támogatója” kép kialakítását szolgálják – mint például egy reklámkampány, rendezvény, kiállítás, művész vagy kiadvány támogatása.</P>
+              <p>Ha a stratégiánk és üzleti modellünknek megfelelően tervezzük ezen tevékenységünket, akkor a fenntarthatóság és a közösségek támogatása olyan tényezővé válhat, amely pótlólagos üzleti sikert hoz minden résztvevő számára.</p>
+              <p>További információért kérjük lépjen kapcsolatba velünk az itt található űrlap kitöltésével.</p>
+              <section id="contact-form">
+                <form action="contact.php" method="post" novalidate="" class="contact-form clearfix">
+                  <p class="adjust">
+                    <label for="name">Név<span>*</span></label>
+                    <input id="name" type="text" name="name" value="" title="* Please enter your name" class="required">
+                  </p>
+                  <p>
+                    <label for="pn">Telefonszám span *</label>
+                    <input id="pn" type="text" name="pn" value="">
+                  </p>
+                  <label for="message">Üzenet<span>*</span></label>
+                  <textarea id="message" name="message" title="* Please enter your message" class="required"></textarea>
+                  <input type="submit" name="submit" value="Send Message" class="submit"><img id="contact-loader" src="images/ajax-loader.gif" alt="Loading...">
+                  <input type="hidden" name="action" value="send_message">
+                  <input type="hidden" name="target" value="robot@psdtohtmlwp.com">
+                </form>
+                <div class="error-container"></div>
+                <p id="message-sent">&nbsp;</p>
+              </section>
             </article>
           </div>
           <!-- End Main-->

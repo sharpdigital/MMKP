@@ -4,31 +4,38 @@ block maintitle
   | Szponzoráció
 
 block maincontent
-  p Tisztelt leendő Partnerünk!
+  h2 Tisztelt leendő Partnerünk!
+
   p Kérném, hogy engedje meg hogy egy esetleges jövőbeni együttműködés reményében figyelembe ajánljunk szervezetünket és honlapunkat.
-  p A Magyar Művészeti és Kulturális Portál egy olyan speciális kezdeményezés, ahol a vállalatok, azok ügyfelei, az állam és a társadalom egyre fokozódó szociális és kulturális felelősségvállalás keretében a helyi közösségekkel együtt dolgozhatnak és alkothatnak maradandó értéket.
-  P Számunkra a legfontosabb a magyar művészet, kultúra magas színvonalon való továbbadása, a kihalófélben  lévő magyar mesterségek és azok mestereinek felkutatása és bemutatása. Mindezt olyan programokon keresztül tesszük, amelyek elsősorban egy a “Kultúra kiemelt támogatója” kép kialakítását szolgálják – mint például egy reklámkampány, rendezvény, kiállítás, művész vagy kiadvány támogatása.
-  p Ha a stratégiánk és üzleti modellünknek megfelelően tervezzük ezen tevékenységünket, akkor a fenntarthatóság és a közösségek támogatása olyan tényezővé válhat, amely pótlólagos üzleti sikert hoz minden résztvevő számára.
+  p Számunkra a legfontosabb a magyar művészet, kultúra magas színvonalon való továbbadása, a kihalófélben lévő magyar mesterségek és azok mestereinek felkutatása és bemutatása. Mindezt olyan programokon keresztül tesszük, amelyek elsősorban egy a “Kultúra kiemelt támogatója” kép kialakítását szolgálják – mint például egy reklámkampány, rendezvény, kiállítás, művész vagy kiadvány támogatása.
+  p Ha a stratégiánk és üzleti modellünknek megfelelően tervezzük ezen tevékenységünket, akkor a fenntarthatóság és a közösségek támogatása olyan tényezővé válhat, amely pótlólagos üzleti sikert hoz minden résztvevő számára. 
   p További információért kérjük lépjen kapcsolatba velünk az itt található űrlap kitöltésével.
 
   section#contact-form
     form.contact-form.clearfix(action='contact.php', method='post', novalidate='')
       p.adjust
-        label(for='name')
-          | Név
+        label(for='name') Név
           span *
-        input#name.required(type='text', name='name', value='', title='* Please enter your name')
+        input#name.required(type='text', name='name', value='', title='* Kérjük ide írja be a nevét')
       p
-        label(for='pn') Telefonszám span *
-        input#pn(type='text', name='pn', value='')
-      label(for='message')
-        | Üzenet
+        label(for='pn') Telefonszám
+          span *
+        input#pn(type='text', name='pn', value='', title='* Kérjük ide írja be a telefonszámát')
+      label(for='message') Üzenet
         span *
-      textarea#message.required(name='message', title='* Please enter your message')
-      input.submit(type='submit', name='submit', value='Send Message')
-      img#contact-loader(src='images/ajax-loader.gif', alt='Loading...')
+      textarea#message.required(name='message', title='* Kérjük ide írja be az üzenetét')
+      input.submit(type='submit', name='submit', value='Üzenet küldése')
+      img#contact-loader(src='images/ajax-loader.gif', alt='Küldés...')
       input(type='hidden', name='action', value='send_message')
       input(type='hidden', name='target', value='robot@psdtohtmlwp.com')
     .error-container
     p#message-sent &nbsp;
+
+
+  p Kérjük,
+    a(href='https://prezi.com/d3fm4vsdpot2/kapor/?utm_campaign=share&amp;utm_medium=copy', target='_blank')  tekintse meg prezentációnkat. 
+  p Köszönjük!
+
+  p Magyar Művészeti és Kulturális Portál.
+  p 2012.
 
